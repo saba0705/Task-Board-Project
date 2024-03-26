@@ -11,6 +11,40 @@ body {
   margin: 0 auto;
 }
 
+
+
+#sortable {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type:none;
+  padding: 0;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#sortable li {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: #d53a3a;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+#sortable li.ui-sortable-placeholder {
+  background-color: #f1f1f1;
+  border: 1px dashed #f3da36;
+}
+
 .task-card:hover {
   cursor: grab;
+}
+
+.task-card.dragging {
+  cursor: grabbing;
+}
+
+.by line {
+  font-weight:200;
+  font-style: italic;
 }
